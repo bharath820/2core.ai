@@ -15,6 +15,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { FileText, Plus, Trash2, Share2, Eye, Calendar, Upload } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { Textarea } from "@/components/ui/textarea";
+import { useUser } from "@/hooks/use-user";
 
 const reportSchema = z.object({
   title: z.string().min(1, "Title is required"),

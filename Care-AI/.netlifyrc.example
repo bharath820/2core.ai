@@ -1,0 +1,16 @@
+# Example Netlify configuration
+# Copy this file and rename it to .netlifyrc if you want to override settings
+
+{
+  "build": {
+    "command": "npm run build:frontend",
+    "publish": "dist/public"
+  },
+  "dev": {
+    "command": "npm run dev:frontend",
+    "port": 3000
+  }
+}
+
+
+

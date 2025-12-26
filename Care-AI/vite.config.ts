@@ -30,6 +30,14 @@ export default defineConfig({
   build: {
     outDir: path.resolve(import.meta.dirname, "dist/public"),
     emptyOutDir: true,
+    // Copy public folder contents (including _redirects) to dist
+    copyPublicDir: true,
+    rollupOptions: {
+      // Ensure _redirects file is included in build
+      output: {
+        // Keep file structure
+      }
+    }
   },
   server: {
     port: 3000,
